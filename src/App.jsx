@@ -5,9 +5,11 @@ const App = () => {
 
     return (
     <BrowserRouter>
+    <Navbar />
       <div className="relative z-0 bg-primary">
+      <Navbar />
         <div className="relative z-0 bg-gradient-to-b from-primary via-primary to-red-950 bg-fixed">
-          <Navbar />
+          
           <Hero />
         </div>
         <About/>

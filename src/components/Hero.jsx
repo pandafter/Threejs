@@ -34,7 +34,7 @@ const Hero = () => {
                     repeat: Infinity,
                     repeatType:'loop'
                   }}
-                  className='w-3 h-4 rounded-full bg-secondary mb-1'
+                  className='w-3 h-4 rounded-full bg-secondary mb-1 sx:mt-10 '
                 />
 
               </div>

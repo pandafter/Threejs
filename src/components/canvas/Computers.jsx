@@ -7,27 +7,32 @@ import CanvasLoader from '../Loader'
 
 const Computers = ( {isMobile} ) => {
 
-  const computer = useGLTF('./desktop_pc/scene.gltf')
+  const computer = useGLTF('./ferrari_f50_1995/scene.gltf')
+  
 
   return (
     <scene>
       <hemisphereLight intensity={0.15} groundColor='black'/>
-      <pointLight intensity={1} />
+      <ambientLight intensity={0.3} />
       
-      <spotLight 
+      <directionalLight 
         
-        position={[-20, 50, 10]}
+        color='red'
+        position={[-10, 90, 5]}
         angle={0.12}
-        penumbra={1}
+        penumbra={0.5}
         intensity={1}
         castShadow
-        shadow-mapSize={1024}
+        shadow-mapSize={2400}
+        
       />
+     
+      
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.5 : 0.75}
-        position={isMobile ? [0, -3, -1.5] :  [0, -3.15, -0.8]}
-        rotation={[-0.01, -0.2, -0.1]}
+        scale={isMobile ? 1.5 : 3}
+        position={isMobile ? [0.1, -2, -0.1] :  [0.5, -3.1, -0.1]}
+        rotation={isMobile ? [0, 0.8, 0] : [0, 0.2, 0]}
         
       />
     </scene>
