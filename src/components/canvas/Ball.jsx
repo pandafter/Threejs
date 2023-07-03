@@ -1,6 +1,7 @@
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 
 import { Canvas, useFrame } from "@react-three/fiber";
+import { DoubleSide } from "three";
 import {
   Decal,
   Float,
@@ -17,25 +18,42 @@ const Ball = (props) => {
   
 
   return (
-    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
+    <Float speed={1.75} rotationIntensity={0} floatIntensity={0}>
       <ambientLight intensity={2} />
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
-        <cylinderGeometry args={[1, 1]} />
+        <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
-          color='#fff8eb'
+          color='#2E2E2E'
           polygonOffset
-          polygonOffsetFactor={-5}
+          polygonOffsetFactor={0}
           flatShading
+          side={DoubleSide}
+          
         />
         <Decal
          
+          
+          autorotateSteps={1} auto
           position={[0, 0, 1]}
           rotation={[2 * Math.PI, 0, 6.25]}
-          scale={1}
+          scale={1.3}
           map={decal}
           flatShading
+          
         />
+        <Decal
+         
+          
+         autorotateSteps={1} auto
+         position={[0, 0, -1]}
+         rotation={[2 * Math.PI, 0, 6.25]}
+         scale={1.3}
+         map={decal}
+         flatShading
+         
+       />
+       
       </mesh>
     </Float>
   );
@@ -50,6 +68,8 @@ const BallCanvas = ({ icon }) => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls 
+          autoRotate
+          autoRotateSpeed={10}
           enableZoom={false} 
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}

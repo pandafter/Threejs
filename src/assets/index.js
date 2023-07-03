@@ -31,6 +31,8 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import ai_sum from "./ai_sum.png";
+
 export {
   logo,
   IT,
@@ -61,4 +63,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  ai_sum,
 };

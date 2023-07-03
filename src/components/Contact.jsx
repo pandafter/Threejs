@@ -39,7 +39,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Juan Leyva",
           from_email: form.email,
-          to_email: "juannicolasleyvahoyos@gmail.com",
+          to_email: "admin@juanleyva.tech",
           message: form.message,
         },
         '2Q8QYd9tz_jkA52WU'

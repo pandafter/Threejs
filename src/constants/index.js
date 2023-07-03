@@ -15,13 +15,7 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    ai_sum,
     threejs,
     IT,
   } from "../assets";
@@ -36,9 +30,14 @@ import {
       title: "Work",
     },
     {
+      id: "projects",
+      title: "Projects",
+    },
+    {
       id: "contact",
       title: "Contact",
     },
+    
   ];
   
   const services = [
@@ -159,27 +158,32 @@ import {
   ];
   
   const projects = [
-    /*{
-      name: "Car Rent",
+    {
+      name: "AI Summarizer",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based platform tool, that uses new GTP-4 AI to read information from Articles and different web pages that returns a Summarize of it.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "vite",
           color: "green-text-gradient",
         },
         {
           name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "redux",
+          color: "purple-text-gradient",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: ai_sum,
+      source_code_link: "https://github.com/pandafter/ai_sum",
     },
+    /*
     {
       name: "Job IT",
       description:

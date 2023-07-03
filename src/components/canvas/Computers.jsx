@@ -7,7 +7,7 @@ import CanvasLoader from '../Loader'
 
 const Computers = ( {isMobile} ) => {
 
-  const computer = useGLTF('./ferrari_f50_1995/scene.gltf')
+  const computer = useGLTF('./desktop_pc/scene.gltf')
   
 
   return (
@@ -30,8 +30,8 @@ const Computers = ( {isMobile} ) => {
       
       <primitive
         object={computer.scene}
-        scale={isMobile ? 1.5 : 3}
-        position={isMobile ? [0.1, -2, -0.1] :  [0.5, -3.1, -0.1]}
+        scale={isMobile ? 0.5 : 0.8}
+        position={isMobile ? [-0.3, -1.5, -0.1] :  [0.5, -3.1, -0.1]}
         rotation={isMobile ? [0, 0.8, 0] : [0, 0.2, 0]}
         
       />
