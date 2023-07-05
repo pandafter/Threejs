@@ -18,6 +18,8 @@ import {
     ai_sum,
     threejs,
     IT,
+    native,
+    dashboard,
   } from "../assets";
   
   export const navLinks = [
@@ -183,28 +185,51 @@ import {
       image: ai_sum,
       source_code_link: "https://github.com/pandafter/ai_sum",
     },
-    /*
+    
     {
-      name: "Job IT",
+      name: "Native Job",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "React Native app, with the power of API's this is an app for IOS and Android that helps you to find the dream Job for a Developer.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "React native",
+          color: "pink-text-gradient",
         },
         {
           name: "restapi",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
-          color: "pink-text-gradient",
+          name: "css",
+          color: "purple-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: native,
+      source_code_link: "https://github.com/pandafter/Native_app_jobs",
     },
+
+    {
+      name: "Admin Dashboard",
+      description:
+        "ReactJS app, for little or big company's, here you can view absolutely all your company data, personal, clients, sales, etc... It's the best app for your startups company.",
+      tags: [
+        {
+          name: "ReactJs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "SyncfusionJs",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "green-text-gradient",
+        },
+      ],
+      image: dashboard,
+      source_code_link: "https://github.com/pandafter/dashboard",
+    },
+    /*
     {
       name: "Trip Guide",
       description:

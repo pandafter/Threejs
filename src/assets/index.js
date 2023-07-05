@@ -33,7 +33,12 @@ import tripguide from "./tripguide.png";
 
 import ai_sum from "./ai_sum.png";
 
+import native from './native.jpg';
+import dashboard from './dashboard.png'
+
 export {
+  dashboard,
+  native,
   logo,
   IT,
   backend,
